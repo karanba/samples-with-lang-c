@@ -1,2 +1,2 @@
 # samples-with-lang-c
-Small samples in C Language
+Small samples in C and C++ language.
