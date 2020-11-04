@@ -1,10 +1,20 @@
+#include <iostream>
+#include <string>
 
-class Animal
-{
+class Animal {
+public:
+  Animal();
+};
 
+Animal::Animal() {
+  std::string name;
+  name = "terlik";
 }
 
-int main()
-{
-	return 0;
+int main() {
+  if (true) {
+    int i = 1;
+  }
+  Animal a = Animal();
+  return 0;
 }
