@@ -41,8 +41,8 @@ int main(int argc, char *argv[]) {
     cout << "Failed to grap connection. errno: " << errno << endl;
     exit(EXIT_FAILURE);
   }
-  char buffer[100];
-  auto bytesRead = read(connection, buffer, 100);
+  char buffer[1000];
+  auto bytesRead = read(connection, buffer, 1000);
   cout << ".the message was: " << buffer;
   
   string response = "Good talking to you\n";
