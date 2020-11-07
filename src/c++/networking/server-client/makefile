@@ -1,5 +1,5 @@
 main : main.o
-	g++ main.o -o bin/main
+	g++ bin/main.o -o bin/main
 
 main.o: main.cpp
-	g++ -c main.cpp -o main.o
+	g++ -c main.cpp -o bin/main.o
