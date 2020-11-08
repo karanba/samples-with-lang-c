@@ -37,14 +37,14 @@ int main(int argc, char *argv[]) {
     exit(EXIT_FAILURE);
   }
   cout << "Connected to client." << endl;
-  string request = "aaaaaaaaaaaaaaaaa\n";
-
-  //send(connection_status, request.c_str(), request.size(), 0);
-
+  
   char response[256];
   recv(network_socket, &response, sizeof(response), 0);
-  
   cout << "Response: " << response << endl;
+  
+  string request = "Hi, from client.\n";
+  send(connection_status, request.c_str(), request.size(), 0);
+
   
   close(connection_status);
   close(network_socket);
